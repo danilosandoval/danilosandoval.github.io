@@ -1,0 +1,19 @@
+language: node_js # Node.js based project
+node_js:
+  - 12
+cache:
+  yarn: true
+  directories:
+    - public
+    - .cache
+script:
+  - yarn build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  target_branch: gh-pages
+  on:
+    branch: main
