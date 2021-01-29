@@ -8,12 +8,13 @@ cache:
     - .cache
 script:
   - yarn build
+  - touch out/.nojekyll
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: public
+  local_dir: out
   github_token: $GITHUB_TOKEN 
   keep_history: true
-  target_branch: gh-pages
   on:
-    branch: main
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^(master|main)$
