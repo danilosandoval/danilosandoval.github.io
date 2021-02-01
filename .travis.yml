@@ -6,11 +6,11 @@ cache:
     - node_modules
 script:
   - yarn build
-  - touch out/.nojekyll
+  - touch build/.nojekyll
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: out
+  local_dir: build
   github_token: $GITHUB_TOKEN 
   on:
     all_branches: true
