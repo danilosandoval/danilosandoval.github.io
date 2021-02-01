@@ -5,57 +5,60 @@ import {
 } from "react-helmet"
 
 const App = () => {
-  const hiArr = [
-    {
-      flag: "🇪🇸",
-      msg: "Hola"
-    },
-    {
-      flag: "🇺🇸",
-      msg: "Hello"
-    },
-    {
-      flag: "🇮🇹",
-      msg: "Ciao"
-    },
-    {
-      flag: "🇵🇹",
-      msg: "Olá"
-    },
-    {
-      flag: "🇵🇹",
-      msg: "Olá"
-    },
-    {
-      flag: "🇯🇵",
-      msg: "こんにちは"
-    },
-    {
-      flag: "🇨🇳",
-      msg: "嗨，您好！"
-    },
-    {
-      flag: "🇩🇪",
-      msg: "Hallo"
-    },
-    {
-      flag: "🇷🇺",
-      msg: "Всем привет!"
-    },
-    {
-      flag: "🇫🇷",
-      msg: "Salut!"
-    }
-  ]
 
-  const [index, setIndex] = React.useState( Math.floor(Math.random() * (hiArr.length - 0) + 0) )
-  const [msg, setMsg] = React.useState( hiArr[index] )
+  const [msg, setMsg] = React.useState( {
+    flag: "🇪🇸",
+    msg: "Hola"
+  } )
 
   React.useEffect(() => {
     const repeat = setInterval(() => { 
+
+      const hiArr = [
+        {
+          flag: "🇪🇸",
+          msg: "Hola"
+        },
+        {
+          flag: "🇺🇸",
+          msg: "Hello"
+        },
+        {
+          flag: "🇮🇹",
+          msg: "Ciao"
+        },
+        {
+          flag: "🇵🇹",
+          msg: "Olá"
+        },
+        {
+          flag: "🇵🇹",
+          msg: "Olá"
+        },
+        {
+          flag: "🇯🇵",
+          msg: "こんにちは"
+        },
+        {
+          flag: "🇨🇳",
+          msg: "嗨，您好！"
+        },
+        {
+          flag: "🇩🇪",
+          msg: "Hallo"
+        },
+        {
+          flag: "🇷🇺",
+          msg: "Всем привет!"
+        },
+        {
+          flag: "🇫🇷",
+          msg: "Salut!"
+        }
+      ]
+
       // Hello Message
       let i = Math.floor(Math.random() * (hiArr.length - 0) + 0)
-      setIndex(i)
       setMsg( hiArr[i] ) 
     }, 2000)
     return () => clearInterval(repeat)
@@ -78,7 +81,7 @@ const App = () => {
             <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start">
                 <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 sm:mx-0 sm:h-10 sm:w-10">
-                  <img className="rounded-full" src="https://avatars.githubusercontent.com/u/77928026?s=400&u=0b9df73c582a55e7c2cffabae72eb6cb180353ac&v=4" />
+                  <img alt="avatar" className="rounded-full" src="https://avatars.githubusercontent.com/u/77928026?s=400&u=0b9df73c582a55e7c2cffabae72eb6cb180353ac&v=4" />
                 </div>
                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                   <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
