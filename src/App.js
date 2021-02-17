@@ -110,7 +110,7 @@ const App = () => {
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtyQczaI4NkdQ6rZbYpSbyaf-EsW_Uh7nZA70LWAzJVT3ODw/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex justify-center rounded-full shadow-sm px-2 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                 <i class="fas fa-envelope"></i>
               </a>
-              <a href="https://github.com/danilosandoval-root" target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex justify-center rounded-full shadow-sm px-2 py-2 bg-gray-600 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+              <a href="https://github.com/danilosandoval" target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex justify-center rounded-full shadow-sm px-2 py-2 bg-gray-600 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                 <i class="fab fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/danilosandoval/" target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex justify-center rounded-full shadow-sm px-2 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
